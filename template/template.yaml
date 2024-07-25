@@ -94,26 +94,6 @@ Resources:
       SubnetId: !Ref PublicSubnet2
       RouteTableId: !Ref PublicRouteTable
 
-  # PrivateRouteTable:
-  #   Type: 'AWS::EC2::RouteTable'
-  #   Properties:
-  #     VpcId: !Ref VPC
-  #     Tags:
-  #       - Key: Name
-  #         Value: Anthology test PrivateRouteTable
-
-  # PrivateSubnetRouteTableAssociation1:
-  #   Type: 'AWS::EC2::SubnetRouteTableAssociation'
-  #   Properties:
-  #     SubnetId: !Ref PrivateSubnet1
-  #     RouteTableId: !Ref PrivateRouteTable
-
-  # PrivateSubnetRouteTableAssociation2:
-  #   Type: 'AWS::EC2::SubnetRouteTableAssociation'
-  #   Properties:
-  #     SubnetId: !Ref PrivateSubnet2
-  #     RouteTableId: !Ref PrivateRouteTable
-
 # ===== Load Balancer ===== #
 
   ALB:
